@@ -115,4 +115,10 @@ lowercase.addEventListener('click', function(){
     lowercase.style.display = 'none';
 })
 
+document.getElementById('input-color').addEventListener('click', function(){
+    const text = getText();
+    const textColor = document.getElementById('input-color');
+    text.style.color = textColor.value;
+})
+
 
