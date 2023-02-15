@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/26c16a9cc9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="w-3/4 mx-auto p-4 mt-8 text-center bg-sky-300 rounded-md">
+        <h1 class="text-3xl font-bold my-4">My Text Editor</h1>
+        <div class="bg-sky-200 border-black border-4 mx-16 my-2 p-2">
+            <div class="flex justify-between p-4 my-3 border-b-[3px] border-black">
+                <div class="space-x-3">
+                    <i class="fa-solid fa-bold" id="btn-bold"></i>
+                    <i class="fa-solid fa-italic" id="btn-italic"></i>
+                    <i class="fa-solid fa-underline" id="btn-underline"></i>
+                </div>
+                <div class="space-x-3">
+                    <i class="fa-solid fa-align-left p-1 border-setting" id="text-lefting"></i>
+                    <i class="fa-solid fa-align-center p-1 border-setting" id="text-centering"></i>
+                    <i class="fa-solid fa-align-right p-1 border-setting" id="text-righting"></i>
+                    <i class="fa-solid fa-align-justify p-1 border-setting" id="text-justifying"></i>
+                </div>
+                <div class="font-bold space-x-3">
+                    <input type="number" name="" id="text-size" class="w-12">
+                    <span class="hover:cursor-pointer" id="lowercase">a</span>
+                    <span class="hover:cursor-pointer" style="display: none;" id="uppercase">A</span>
+                    <div></div>
+                </div>
+            </div>
+            
+            <textarea name="" id="text-area" class="w-full h-96 p-4"></textarea>
+        </div>
+    </section>
+
+    <script src="js/textEditor.js"></script>
+</body>
+</html>
