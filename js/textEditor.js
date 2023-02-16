@@ -1,4 +1,5 @@
 document.getElementById('text-lefting').style.border = '1px solid';
+document.getElementById('text-size').value =17;
 
 function getText(){
     const text = document.getElementById('text-area');
@@ -92,7 +93,7 @@ document.getElementById('text-justifying').addEventListener('click', function(ev
 
 
 // text size and uppercase lowercase
-document.getElementById('text-size').addEventListener('keyup', function(){
+document.getElementById('text-size').addEventListener('click', function(){
     const text = getText();
     const size = document.getElementById('text-size').value;
     text.style.fontSize = size + 'px';
